@@ -39,5 +39,4 @@ libraryDependencies ++= Seq(
 Compile / mainClass := Some("com.strawary.dental_link.DentalLinkApplication")
 
 // Assembly plugin to bundle everything into a single jar
-assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeScala = false)
-
+assembly / assemblyOption := (assembly / assemblyOption).value.copy(includeScala = false)
